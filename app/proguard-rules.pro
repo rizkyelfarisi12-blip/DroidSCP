@@ -1,0 +1,16 @@
+# sshj memakai refleksi untuk beberapa algoritma dan BouncyCastle
+-keep class net.schmizz.** { *; }
+-keep class com.hierynomus.** { *; }
+-keep class org.bouncycastle.** { *; }
+-dontwarn org.bouncycastle.**
+-dontwarn net.i2p.crypto.**
+-dontwarn com.jcraft.jzlib.**
+-dontwarn javax.naming.**
+-dontwarn org.ietf.jgss.**
+-dontwarn sun.security.**
+-dontwarn org.slf4j.**
+-keepattributes *Annotation*, InnerClasses
+-keep,includedescriptorclasses class app.droidscp.**$$serializer { *; }
+-keepclassmembers class app.droidscp.** { *** Companion; }
+-keep class org.apache.commons.net.** { *; }
+-dontwarn org.apache.commons.net.**
